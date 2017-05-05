@@ -1,0 +1,91 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Drink at BeerHouse</ion-title>
+        <ion-buttons end>
+            <button (click)="GoToCart()" ion-button icon-only>
+      <ion-icon name="cart"></ion-icon>
+      <!--<ion-badge color="secondary" item-right>4</ion-badge>-->
+    </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="bar-menu">
+    <ion-list>
+        <ion-list-header>
+            Beer
+        </ion-list-header>
+  <ion-item>
+    <button (click)="presentToast()" ion-button item-right>
+        Add
+    </button>
+    <button (click)="removeItemFromCart()" ion-button item-right>
+        Remove
+    </button>
+    <h2>Windhoek Beer 330ML</h2>
+    <h3>R 39.00</h3>
+  </ion-item>
+
+   <ion-item>
+    <button (click)="presentToast()" ion-button item-right>
+        Add
+    </button>
+    <button (click)="removeItemFromCart()" ion-button item-right>
+        Remove
+    </button>
+    <h2>Corona Beer 330ML</h2>
+    <h3>R 35.00</h3>
+  </ion-item>
+
+   <ion-item>
+    <button (click)="presentToast()" ion-button item-right>
+        Add
+    </button>
+    <button (click)="removeItemFromCart()" ion-button item-right>
+        Remove
+    </button>
+    <h2>Tiger Beer 500ML</h2>
+    <h3>R 30.00</h3>
+  </ion-item>
+
+   <ion-list-header>
+            Whiskey
+        </ion-list-header>
+
+   <ion-item>
+      
+    <button (click)="presentToast()" ion-button item-right>
+        Add
+    </button>
+    <button (click)="removeItemFromCart()" ion-button item-right>
+        Remove
+    </button>
+    <h2>Jameson (single)</h2>
+    <h3>R 25.00</h3>
+  </ion-item>
+
+   <ion-item>
+    <button (click)="presentToast()" ion-button item-right>
+        Add
+    </button>
+    <button (click)="removeItemFromCart()" ion-button item-right>
+        Remove
+    </button>
+    <h2>Glenfedditch(single)</h2>
+    <h3>R 45.00</h3>
+  </ion-item>
+
+   <ion-item>
+    <button (click)="presentToast()" ion-button item-right>
+        Add
+    </button>
+    <button (click)="removeItemFromCart()" ion-button item-right>
+        Remove
+    </button>
+    <h2>Glenmorangie(single)</h2>
+    <h3>R 56.00</h3>
+  </ion-item>
+  
+</ion-list>
+</ion-content>

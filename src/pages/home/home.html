@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+    <button ion-button menuToggle><ion-icon name="menu" item-left></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col class="HeaderCol" col-12>
+      <header class="vipLogo">
+        <h4 class="vipLogoHeader">Teed Up</h4>
+        <p class="vipLogoSubheader">Golf Just got better.</p>
+      </header>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-12>
+      <button (click)="presentLoadingCustom('Facebook')" class="facebookBtn loginBtn loginBtn--facebook">
+   Facebook
+</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12>
+      <p class="signInCredentials">Or sign in with your credentials</p>
+    </ion-col>
+    <ion-col col-12>
+      <ion-list class="item-borderless">
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-col>
+
+    <ion-col col-12>
+      <button class="SignInBtn" ion-button color="secondary" outline (click)="signIn()">Sign In</button>
+    </ion-col>
+
+  </ion-row>
+
+  <!--</div>-->
+  <ion-row class="signUpRow">
+    <ion-col col-12>
+      <p>Don't have an account?</p>
+      <button ion-button block (click)="signUp()">Join us for a golf day!</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-menu persistent="true" swipeEnabled="true" [content]="mycontent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>VIP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+   <ion-list>
+  <ion-item>
+    <ion-icon name="person" item-left></ion-icon>
+      Profile
+  </ion-item>
+    <ion-item>
+    <ion-icon name="beer" item-left></ion-icon>
+      Find a Bar
+  </ion-item>
+  <ion-item>
+    <ion-icon name="paper" item-left></ion-icon>
+      Past Orders
+  </ion-item>
+  <ion-item>
+    <ion-icon name="card" item-left></ion-icon>
+      Payment
+  </ion-item>
+  <ion-item>
+    <ion-icon name="help-circle" item-left></ion-icon>
+      Help
+  </ion-item>
+</ion-list>
+  </ion-content>
+
+
+  <ion-footer style="left:0;right:0;margin:0; width: 100%;position: fixed;">
+        <ion-item item-left menu-close href="#" >
+          <ion-icon name="exit" item-left></ion-icon>
+          Logout</ion-item>
+    </ion-footer>
+
+</ion-menu>
+
+
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

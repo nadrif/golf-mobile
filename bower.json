@@ -1,0 +1,20 @@
+{
+  "name": "vip",
+  "description": "this is the vip mobile app",
+  "main": "ion",
+  "authors": [
+    "Nadim"
+  ],
+  "license": "None",
+  "keywords": [
+    "none"
+  ],
+  "homepage": "https://github.com/rbgapps/vip-mobile",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
